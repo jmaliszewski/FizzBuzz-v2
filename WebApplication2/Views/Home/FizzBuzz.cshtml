@@ -1,0 +1,30 @@
+﻿@model WebApplication2.Models.Class
+@{
+    ViewBag.Title = "FizzBuzz";
+}
+<!DOCTYPE html>
+<body>
+    <div>
+        @using (Html.BeginForm())
+        {
+        <font color="black" size="7">
+            <div align="center">
+
+                <div id="Liczba">
+                    @Html.DisplayNameFor(model => Model.liczba):
+                </div>
+                <div id="LiczbaOkno">
+                    @Html.TextBoxFor(model => Model.liczba)
+                </div>
+
+                <div id="Przycisk">
+                    <br />
+                    <input type="submit" value="Odpowiedz" />
+                </div>
+
+            </div>
+        </font>
+        }
+    </div>
+
+</body>
